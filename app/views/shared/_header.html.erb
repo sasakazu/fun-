@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-       <%= link_to "My Fun!", root_path, :class => "navbar-brand" %>
+       <%= link_to "Fun !", root_path, :class => "navbar-brand" %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -21,17 +21,25 @@
         <li><%= link_to "link", root_path %></li>
         <li><%= link_to "link", root_path %></li>
         <li><%= link_to "link", root_path %></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
+
+        <% if user_signed_in? %>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">アカウント <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to 'プロフィール', current_user %></li>
+                  <li><%= link_to 'プロフィール変更', edit_user_registration_path %></li>
+                  <li role="separator" class="divider"></li>
+                  <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+                </ul>
+
+            <% else %>
+              <li><%= link_to 'サインアップ', new_user_registration_path %></li>
+              <li><%= link_to 'ログイン', new_user_session_path %></li>
+            <% end %>
+
+          </li>
+
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

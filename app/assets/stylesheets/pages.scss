@@ -1,3 +1,48 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// home.html.erb
+
+
+.home-top-image {
+
+  background-image: url("/images/fan5.jpg");
+  background-size: cover;
+  height: 100%!important;
+
+  h1 {
+    margin-top: 0!important;
+    padding-top: 250px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  p {
+    text-align: center;
+    padding-bottom: 70px;
+
+  }
+
+   a {
+     text-align: center;
+      padding-bottom: 20px;
+      color: #e34735;
+      margin: 0 auto;
+      border: 1px solid #e34735;
+      width: 200px;
+      border-radius: 5px;
+      display: block;
+      padding-top: 21px;
+      margin-bottom: 155px;
+   }
+  a:hover {
+    color: #e34735;
+    transition: all .8s;
+    border: none;
+    text-decoration: none;
+    background: #FFF;
+  }
+}
