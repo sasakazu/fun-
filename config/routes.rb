@@ -4,6 +4,11 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :users
+  resources :musics
+  resources :lives
+  resources :pictures
+  resources :blogs
+
 
   root 'pages#home'
 
