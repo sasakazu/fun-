@@ -4,13 +4,42 @@
 
 <div class="container">
 
-  <h1>Users#show</h1>
-  <p>Find me in app/views/users/show.html.erb</p>
+  <div class="user-show-wrapper">
 
+
+<h1>
+  <%= fa_icon "envelope-o" %>
   <%= @user.email %>
 
+</h1>
+
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">歌って</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">踊って</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">騒いで</a></li>
+    <li role="presentation"><%= link_to '設定', edit_user_registration_path(current_user), :target => "_blank" %></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">歌って</div>
+    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane" id="settings">
+    </div>
+  </div>
 
 </div>
+
+</div>
+<!-- user-show-wrapper -->
+
+</div>
+<!-- container -->
+
 
 
 <%= render 'shared/footer' %>

@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
 
  @import "bootstrap-sprockets";
@@ -29,6 +30,22 @@
 
 
 }
+
+.navbar-nav > li > a {
+    color: #fff!important;
+
+
+}
+
+.open {
+
+  a:focus {
+    color: #333!important;
+
+  }
+}
+
+
 
 .navbar-brand {
     color: #FFF!important;
@@ -51,6 +68,12 @@
   }
 
 
+}
+
+// _header.html.erb
+
+i.fa.fa-music {
+    margin-right: 5px;
 }
 
 

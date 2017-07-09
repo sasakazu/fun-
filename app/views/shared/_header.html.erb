@@ -16,15 +16,17 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">投稿 <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= fa_icon "music" %>
+            歌って 踊って 騒いで
+          <span class="caret"></span>
+          </a>
 
           <ul class="dropdown-menu">
 
 
-        <li><%= link_to "歌う", root_path %></li>
-        <li><%= link_to "描く", root_path %></li>
-        <li><%= link_to "書く", root_path %></li>
-        <li><%= link_to "踊る", root_path %></li>
+        <li><%= link_to "音源登録", root_path %></li>
+        <li><%= link_to "書く（ブログ、絵、歌詞）", root_path %></li>
+        <li><%= link_to "踊る（ライブ）", root_path %></li>
         </ul>
 
       </li>

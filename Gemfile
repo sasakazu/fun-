@@ -34,6 +34,8 @@ gem 'pg', group: :production
 
 gem 'bootstrap-sass'
 gem 'devise'
+gem "font-awesome-rails"
+
 
 
 
