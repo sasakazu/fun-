@@ -4,7 +4,30 @@
 
 <div class="container">
 
-  new
+  <h2>
+    絵の登録
+
+  </h2>
+
+
+<%= form_for @picture do |f| %>
+
+  <div class="field">
+    <%= f.label :タイトル %>
+    <%= f.text_field :title %>
+  </div>
+
+
+  <div class="field">
+    <%= f.file_field :picture %>
+  </div>
+
+
+<%= f.submit '送信' %>
+
+<% end %>
+
+
 </div>
 
 

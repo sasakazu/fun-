@@ -35,6 +35,9 @@ gem 'pg', group: :production
 gem 'bootstrap-sass'
 gem 'devise'
 gem "font-awesome-rails"
+gem 'carrierwave'
+gem 'carrierwave-audio'
+gem 'flowplayer'
 
 
 

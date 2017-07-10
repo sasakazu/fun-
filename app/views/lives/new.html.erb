@@ -4,7 +4,30 @@
 
 <div class="container">
 
-  new
+  <h2>動画投稿</h2>
+
+
+
+
+  <%= form_for @live do |f| %>
+
+    <div class="field">
+      <%= f.label :タイトル %>
+      <%= f.text_field :title %>
+    </div>
+
+    <div class="field">
+      <%= f.file_field :live %>
+    </div>
+
+
+  <%= f.submit '送信' %>
+
+  <% end %>
+
+
+
+
 </div>
 
 
