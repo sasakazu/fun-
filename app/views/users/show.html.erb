@@ -38,18 +38,18 @@
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">うた</a></li>
-    <li role="presentation"><a href="#blog" aria-controls="profile" role="tab" data-toggle="tab">ブログ</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">ライブ</a></li>
-    <li role="presentation"><a href="#draw" aria-controls="messages" role="tab" data-toggle="tab">絵</a></li>
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">うた ( <%= @user.musics.count %> )</a></li>
+    <li role="presentation"><a href="#blog" aria-controls="profile" role="tab" data-toggle="tab">ブログ ( <%= @user.blogs.count %> )</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">ライブ ( <%= @user.dances.count %> )</a></li>
+    <li role="presentation"><a href="#draw" aria-controls="messages" role="tab" data-toggle="tab">絵 ( <%= @user.pictures.count %> )</a></li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">歌って</div>
+    <div role="tabpanel" class="tab-pane active" id="home"><%= render @musics %></div>
     <div role="tabpanel" class="tab-pane" id="blog"><%= render @blogs %></div>
-    <div role="tabpanel" class="tab-pane" id="messages">ライブ</div>
-    <div role="tabpanel" class="tab-pane" id="draw">絵</div>
+    <div role="tabpanel" class="tab-pane" id="messages"><%= render @dances %></div>
+    <div role="tabpanel" class="tab-pane" id="draw"><%= render @pictures %></div>
   </div>
 
 </div>

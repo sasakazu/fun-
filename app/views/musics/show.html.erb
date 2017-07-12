@@ -1,7 +1,18 @@
 
 <%= render 'shared/header' %>
 
-<%= audio_tag(@music.music, controls: true) %>
+<div class="container">
 
+
+
+
+  <p>タイトル：<%= @music.title %></p>
+
+  <%= audio_tag(@music.music, controls: true) %>
+
+
+
+
+</div>
 
 <%= render 'shared/footer' %>

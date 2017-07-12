@@ -17,7 +17,6 @@ end
     def create
       @blog = current_user.blogs.build(blog_params)
 
-      # @blog = Blog.new(blog_params)
       if @blog.save
           redirect_to @blog
       else

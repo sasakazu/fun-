@@ -80,9 +80,21 @@ i.fa.fa-music {
 // _footer.html.erb
 
 footer {
-  text-align: center;
+  p {
+    text-align: center;
+
+  }
   padding-top: 10px;
   padding-bottom: 10px;
   background: #e34735;
   color: #FFF;
+
+  a {
+    color: #FFF;
+  }
+
+  li {
+    list-style: none;
+
+  }
 }

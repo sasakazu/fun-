@@ -14,16 +14,17 @@ class MusicsController < ApplicationController
 
 
 
+
     def create
+      @music = current_user.musics.build(music_params)
 
-      @music = Music.new(music_params)
-
-        if @music.save
-            redirect_to @music
-        else
+      if @music.save
+          redirect_to @music
+      else
           render "new"
-        end
+      end
     end
+
 
 
 

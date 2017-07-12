@@ -8,7 +8,7 @@ class User < ApplicationRecord
 
 has_many :musics
 has_many :pictures
-has_many :lives
+has_many :dances
 has_many :blogs
 
 mount_uploader :icon, UserUploader

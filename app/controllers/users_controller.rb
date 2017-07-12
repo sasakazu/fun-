@@ -5,9 +5,13 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @blogs = @user.blogs.paginate(page: params[:page])
-
+    @pictures = @user.pictures.paginate(page: params[:page])
+    @musics = @user.musics.paginate(page: params[:page])
+    @dances = @user.dances.paginate(page: params[:page])
 
   end
+
+
 
   def edit
     @user = User.find(params[:id])

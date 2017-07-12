@@ -1,13 +1,18 @@
 Rails.application.routes.draw do
 
 
+  get 'dances/new'
+
+  get 'dances/show'
+
   devise_for :users
 
   resources :users
   resources :musics
-  resources :lives
+  # resources :lives
   resources :pictures
   resources :blogs
+  resources :dances
 
 
   root 'pages#home'
