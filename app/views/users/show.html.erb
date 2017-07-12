@@ -6,36 +6,50 @@
 
   <div class="user-show-wrapper">
 
+    <div class="row user-show-detail">
 
-      <h1>
-        <%= fa_icon "envelope-o" %>
-        <%= @user.email %>
-      </h1>
+
+    <div class="col-md-5">
+
+
+    <%= link_to image_tag(@user.icon, :class => "img-circle"), edit_user_path(current_user) %>
+
+  </div>
+
+    <div class="col-md-7">
+
+      <h2><%= fa_icon "user" %>
+        <%= @user.name %>
+      </h2>
+
+      <h4><%= fa_icon "envelope-o" %>
+          <%= @user.email %>
+      </h4>
 
       <div class="fan-count">
-        <p>ファン数： 23人</p>
-        <p>応援しているファン数： 3人</p>
+        <p><%= fa_icon "handshake-o" %>ファン数： 23人</p>
+        <p><%= fa_icon "hand-peace-o" %>応援しているファン数： 3人</p>
       </div>
 
+    </div>
+  </div>
 
 <div>
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">うた</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">ブログ</a></li>
+    <li role="presentation"><a href="#blog" aria-controls="profile" role="tab" data-toggle="tab">ブログ</a></li>
     <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">ライブ</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">絵</a></li>
-    <li role="presentation"><%= link_to '設定', edit_user_registration_path(current_user) %></li>
+    <li role="presentation"><a href="#draw" aria-controls="messages" role="tab" data-toggle="tab">絵</a></li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="home">歌って</div>
-    <div role="tabpanel" class="tab-pane" id="profile">...</div>
-    <div role="tabpanel" class="tab-pane" id="messages">...</div>
-    <div role="tabpanel" class="tab-pane" id="settings">
-    </div>
+    <div role="tabpanel" class="tab-pane" id="blog"><%= render @blogs %></div>
+    <div role="tabpanel" class="tab-pane" id="messages">ライブ</div>
+    <div role="tabpanel" class="tab-pane" id="draw">絵</div>
   </div>
 
 </div>

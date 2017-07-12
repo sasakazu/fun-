@@ -38,7 +38,7 @@ gem "font-awesome-rails"
 gem 'carrierwave'
 gem 'carrierwave-audio'
 gem 'flowplayer'
-
+gem 'will_paginate'
 
 
 

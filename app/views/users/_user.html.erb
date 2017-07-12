@@ -1,0 +1,21 @@
+
+
+
+
+  <div class="col-sm-6 col-md-4">
+    <div class="user-index-loop">
+    <div class="thumbnail">
+
+       <%= image_tag user.icon %>
+      <div class="caption">
+        <h3><%= user.name %></h3>
+        <p><%= user.email %></p>
+        <p>
+          <%= link_to '詳細へ', user , :class => "btn btn-default" %>
+          <!-- <a href="#" class="btn btn-default" role="button">詳細へ</a> -->
+        </p>
+      </div>
+    </div>
+  </div>
+
+  </div>

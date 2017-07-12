@@ -11,6 +11,9 @@ has_many :pictures
 has_many :lives
 has_many :blogs
 
+mount_uploader :icon, UserUploader
+
+
 
 
 

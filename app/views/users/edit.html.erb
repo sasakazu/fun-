@@ -1,2 +1,31 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
+
+<%= render 'shared/header' %>
+
+
+<div class="container">
+
+<h1>アカウント編集</h1>
+
+
+
+    <%= form_for @user do |f| %>
+
+     <%= f.label :名前 %><br>
+     <%= f.text_field :name %><br>
+
+     <%= f.label :アイコン %><br>
+     <%= f.file_field :icon %><br>
+
+
+
+     <%= f.submit '更新' %>
+
+     <% end %>
+
+
+   </div>
+
+
+
+
+<%= render 'shared/footer' %>

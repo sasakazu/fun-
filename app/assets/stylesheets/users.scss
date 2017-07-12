@@ -14,18 +14,30 @@
     margin-top: 50px;
     margin-bottom: 30px;
   }
+
+  img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    display: block;
+
+  }
+}
+
+.user-show-detail {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 
 .fan-count {
   margin-bottom: 100px;
+  margin-top: 30px;
 
-  
-  p {
-    margin: 0 auto;
-    width: 50%;
-
+  i {
+    padding-right: 7px;
   }
+
 }
 
 
@@ -34,4 +46,24 @@
 .login-wrapper {
   margin: 100px auto;
 
+}
+
+
+
+// index.html.erb
+
+.user-index-wrapper {
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+
+  i {
+    padding-right: 15px;
+  }
+}
+
+.user-index-loop {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
