@@ -1,3 +1,55 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// index.html.erb
+
+
+.products-wrapper {
+  margin-top: 50px;
+  margin-bottom: 500px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  a {
+    border: 1px #ddd solid;
+    padding: 10px;
+    display: block;
+    font-size: 50px;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+
+
+.products-contents {
+  margin-bottom: 30px;
+}
+
+#uta {
+  a {
+    color: rgb(70, 162, 208);
+  }
+}
+
+#odoru {
+  a {
+    color: rgb(167, 214, 65);
+  }
+}
+
+#kaku {
+  a {
+    color: rgb(71, 213, 64);
+  }
+}
+
+#egaku {
+  a {
+    color: rgb(194, 60, 127);
+  }
+}

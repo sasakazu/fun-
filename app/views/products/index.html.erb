@@ -1,0 +1,42 @@
+
+
+<%= render 'shared/header' %>
+
+<div class="container">
+
+  <div class="products-wrapper">
+
+    <h2>~ 歌って 踊って ~</h2>
+
+
+  <div class="col-md-4 products-contents" id="uta">
+    <%= link_to 'うたう', new_music_path, :target => "_blank" %>
+
+  </div>
+
+
+  <div class="col-md-4 products-contents" id="odoru">
+    <%= link_to 'おどる', new_dance_path, :target => "_blank" %>
+  </div>
+
+
+  <div class="col-md-4 products-contents" id="kaku">
+    <%= link_to 'かく', new_blog_path, :target => "_blank" %>
+  </div>
+
+
+  <div class="col-md-4 products-contents" id="egaku">
+    <%= link_to 'えがく', new_picture_path, :target => "_blank" %>
+  </div>
+
+
+ </div>
+
+</div>
+
+
+
+
+
+
+<%= render 'shared/footer' %>

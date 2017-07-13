@@ -1,19 +1,16 @@
 Rails.application.routes.draw do
 
 
-  get 'dances/new'
-
-  get 'dances/show'
 
   devise_for :users
 
   resources :users
   resources :musics
-  # resources :lives
   resources :pictures
   resources :blogs
   resources :dances
 
+  get 'products' => 'products#index'
 
   root 'pages#home'
 
