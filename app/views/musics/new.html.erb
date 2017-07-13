@@ -4,7 +4,10 @@
 
 <div class="container">
 
-  <h2>音源登録</h2>
+  <div class="new-music-wrapper">
+
+
+  <h2>うたう</h2>
 
 
 
@@ -12,11 +15,11 @@
   <%= form_for @music do |f| %>
 
     <div class="field">
-      <%= f.label :タイトル %>
-      <%= f.text_field :title %>
+      <%= f.text_field :title, :placeholder => "タイトル" %><br>
     </div>
 
     <div class="field">
+      <%= f.label :音楽選択 %>
       <%= f.file_field :music %>
     </div>
 
@@ -26,6 +29,7 @@
   <% end %>
 
 
+</div>
 
 
 </div>

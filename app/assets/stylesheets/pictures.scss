@@ -9,5 +9,65 @@
 img {
   height: 400px;
   width: 400px;
-  
+
+}
+
+
+// new.html.erb
+
+
+
+.new-picture-wrapper {
+  background-color: rgb(194, 60, 127);
+  border-radius: 7px;
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+
+  h2 {
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  label {
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+    left: 10%;
+
+  }
+
+  input[type="text"] {
+    padding: 5px;
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+
+  }
+
+  input[type="file"] {
+    padding: 5px;
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 100px;
+
+  }
+
+  input[type="submit"] {
+    padding: 10px;
+    margin-top: 100px;
+    width: 35%;
+    margin: 0 auto;
+    display: block;
+
+  }
+
 }
