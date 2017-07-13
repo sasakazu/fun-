@@ -1,3 +1,8 @@
 
 
-<p>タイトル：<%= link_to music.title, music, :target => "_blank" %></p>
+
+<p>
+  <%= music.created_at.strftime('%Y/%m/%d') %>
+&nbsp;
+  「 <%= link_to music.title, music, :target => "_blank" %> 」
+</p>

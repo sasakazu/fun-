@@ -39,6 +39,7 @@ gem 'carrierwave'
 gem 'carrierwave-audio'
 gem 'flowplayer'
 gem 'will_paginate'
+gem 'payjp'
 
 
 

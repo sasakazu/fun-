@@ -1,6 +1,7 @@
 
 
-<div class="col-md-4">
-  <p>タイトル：<%= link_to dance.title, dance, :controls => true, :target => "_blank" %></p>
-
-</div>
+<p>
+  <%= dance.created_at.strftime('%Y/%m/%d') %>
+&nbsp;
+  「 <%= link_to dance.title, dance, :target => "_blank" %> 」
+</p>

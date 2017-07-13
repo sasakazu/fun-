@@ -1,3 +1,7 @@
 
 
-<p>タイトル：<%= link_to blog.title, blog, :target => "_blank" %></p>
+<p>
+  <%= blog.created_at.strftime('%Y/%m/%d') %>
+&nbsp;
+  「 <%= link_to blog.title, blog, :target => "_blank" %> 」
+</p>

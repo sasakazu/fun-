@@ -2,6 +2,7 @@
 <%= render 'shared/header' %>
 
 
+
 <div class="container">
 
   <div class="user-show-wrapper">
@@ -13,6 +14,7 @@
 
 
     <%= link_to image_tag(@user.icon, :class => "img-circle"), edit_user_path(current_user) %>
+
 
   </div>
 
@@ -27,9 +29,17 @@
       </h4>
 
       <div class="fan-count">
-        <p><%= fa_icon "handshake-o" %>ファン数： 23人</p>
-        <p><%= fa_icon "hand-peace-o" %>応援しているファン数： 3人</p>
+        <p><%= fa_icon "handshake-o" %>支援しているファン： 3人</p>
+        <p><%= fa_icon "hand-peace-o" %>  支援されているファン： 59人</p>
       </div>
+
+
+
+                <%= form_tag(action: :pay, method: :post) do %>
+                   <script type="text/javascript" src="https://checkout.pay.jp" class="payjp-button" data-key="pk_test_d4f1d40f09a5a296ab6cdf80"   data-text="月額330円で応援する"
+                  data-submit-text="月額330円で応援する"></script>
+                <% end %>
+
 
     </div>
   </div>
@@ -42,6 +52,10 @@
     <li role="presentation"><a href="#blog" aria-controls="profile" role="tab" data-toggle="tab">ブログ ( <%= @user.blogs.count %> )</a></li>
     <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">ライブ ( <%= @user.dances.count %> )</a></li>
     <li role="presentation"><a href="#draw" aria-controls="messages" role="tab" data-toggle="tab">絵 ( <%= @user.pictures.count %> )</a></li>
+    <li role="presentation"><a href="#draw" aria-controls="messages" role="tab" data-toggle="tab">
+
+
+    </a></li>
   </ul>
 
   <!-- Tab panes -->
