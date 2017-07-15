@@ -2,7 +2,6 @@
 <%= render 'shared/header' %>
 
 
-
 <div class="container">
 
   <div class="user-show-wrapper">
@@ -29,8 +28,14 @@
       </h4>
 
       <div class="fan-count">
-        <p><%= fa_icon "handshake-o" %>フォロー： 3人</p>
-        <p><%= fa_icon "hand-peace-o" %>  フォロワー： 59人</p>
+
+        <section class="stats">
+           <%= render 'shared/stats' %>
+        </section>
+        
+        <%= render 'follow_form' if user_signed_in? %>
+
+
       </div>
 
 
