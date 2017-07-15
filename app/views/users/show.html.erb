@@ -9,7 +9,7 @@
     <div class="row user-show-detail">
 
 
-    <div class="col-md-5">
+    <div class="col-md-4">
 
 
     <%= link_to image_tag(@user.icon, :class => "img-circle"), edit_user_path(current_user) %>
@@ -17,7 +17,7 @@
 
   </div>
 
-    <div class="col-md-7">
+    <div class="col-md-6">
 
       <h2><%= fa_icon "user" %>
         <%= @user.name %>
@@ -32,20 +32,24 @@
         <section class="stats">
            <%= render 'shared/stats' %>
         </section>
-        
+
         <%= render 'follow_form' if user_signed_in? %>
 
 
       </div>
 
+    <div>
+      <%= form_tag(action: :pay, method: :post) do %>
+         <script type="text/javascript" src="https://checkout.pay.jp" class="payjp-button" data-key="pk_test_d4f1d40f09a5a296ab6cdf80"   data-text="月額330円で応援する"
+            data-submit-text="月額330円で応援する"></script>
+      <% end %>
+    </div>
 
 
-                <%= form_tag(action: :pay, method: :post) do %>
-                   <script type="text/javascript" src="https://checkout.pay.jp" class="payjp-button" data-key="pk_test_d4f1d40f09a5a296ab6cdf80"   data-text="月額330円で応援する"
-                  data-submit-text="月額330円で応援する"></script>
-                <% end %>
+    </div>
 
-
+    <div class="col-md-2 edit-user-btn">
+      <%= link_to 'プロフィール変更', edit_user_path(current_user) %>
     </div>
   </div>
 

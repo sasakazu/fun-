@@ -41,6 +41,30 @@
 }
 
 
+.edit-user-btn {
+
+  a {
+    border: 1px solid #e34735;
+    border-radius: 5px;
+    text-align: center;
+    color: #e34735;
+    display: block;
+    padding: 7px 8px;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #FFF;
+    background: #e34735;
+    transition: .7s;
+  }
+}
+
+
+
+
+
+
 #blog {
   margin-top: 25px;
 }
