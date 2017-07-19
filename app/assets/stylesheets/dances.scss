@@ -63,3 +63,21 @@
   }
 
 }
+
+// show.html.erb
+
+.dance-show-wrapper {
+  margin-top: 70px;
+  margin-bottom: 100px;
+
+  p {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  video {
+    width: 100%;
+
+  }
+}

@@ -56,7 +56,9 @@
 .page-about {
   background-image: url("/images/fan5.jpg");
   height: 100%;
+  width: 100%;
   background-size: cover;
+  position: relative;
 
 span {
   color: rgb(50, 228, 203);
@@ -67,17 +69,17 @@ span {
     padding-top: 150px;
     margin-bottom: 40px;
     font-size: 50px;
-    position: relative;
+    position: absolute;
     left: 10%;
-    // margin-left: 40px;
     margin-top: 0px;
   }
 
   p {
     margin-bottom: 100px;
     color: #FFF;
-    position: relative;
+    position: absolute;
     left: 15%;
+    bottom: 5%;
     font-size: 27px;
   }
 }

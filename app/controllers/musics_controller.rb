@@ -12,7 +12,14 @@ class MusicsController < ApplicationController
     @music = Music.find(params[:id])
   end
 
+  def edit
 
+  end
+
+  def destroy
+    Music.find(params[:id]).destroy
+    redirect_to current_user
+  end
 
 
     def create

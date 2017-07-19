@@ -152,4 +152,102 @@
 .user-index-loop {
   margin-top: 30px;
   margin-bottom: 30px;
+
+  h3 {
+    color: #f1f1f1;
+  }
+
+  p {
+    color: #f1f1f1;
+    margin-bottom: 23px;
+
+  }
+
+  .thumbnail {
+    background: #e34735;
+  }
+}
+
+// signup
+
+
+.signup-wrapper {
+  width: 50%;
+  margin: 100px auto;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  input[type= "email"] {
+    width: 100%;
+    padding: 5px;
+
+  }
+
+  input[type= "password"] {
+    width: 100%;
+    padding: 5px;
+
+  }
+
+  input[type= "submit"] {
+    width: 20%;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+
+
+  label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+}
+
+
+// login
+
+
+.login-wrapper {
+
+  width: 50%;
+  margin: 100px auto;
+
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  input[type= "email"] {
+    width: 100%;
+    padding: 5px;
+
+  }
+
+
+  input[type= "password"] {
+    width: 100%;
+    padding: 5px;
+
+  }
+
+  input[type= "submit"] {
+    width: 20%;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+
+
+  label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+
+
 }

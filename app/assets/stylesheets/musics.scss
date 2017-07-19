@@ -61,3 +61,30 @@
   }
 
 }
+
+// show.html.erb
+
+.music-show-wrapper {
+  margin-top: 100px;
+  margin-bottom: 300px;
+
+  p {
+    margin-bottom: 100px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  audio {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+
+}
+
+// _music.html.erb
+
+.areyousure {
+  color: rgb(237, 79, 11);
+  float: right;
+}

@@ -49,7 +49,7 @@
     margin: 0 auto;
     display: block;
     margin-bottom: 100px;
-    
+
   }
 
   input[type="submit"] {
@@ -61,4 +61,23 @@
 
   }
 
+}
+
+
+// show.html.erb
+
+
+.blog-show-wrapper {
+  margin-bottom: 100px;
+  margin-top: 100px;
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    width: 70%;
+    margin: 0 auto;
+
+  }
 }

@@ -4,13 +4,16 @@
 <div class="container">
 
 
+<div class="music-show-wrapper">
 
 
-  <p>タイトル：<%= @music.title %></p>
 
-  <%= audio_tag(@music.music, controls: true) %>
+  <p>タイトル： <%= @music.title %></p>
+
+    <%= audio_tag(@music.music, controls: true) %>
 
 
+</div>
 
 
 </div>

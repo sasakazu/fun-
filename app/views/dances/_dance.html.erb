@@ -4,4 +4,12 @@
   <%= dance.created_at.strftime('%Y/%m/%d') %>
 &nbsp;
   「 <%= link_to dance.title, dance, :target => "_blank" %> 」
+
+  <%= link_to '[ edit ]', edit_dance_path(current_user) %>
+
+  <%= link_to "delete", dance, method: :delete, :class => "areyousure",
+                                  data: { confirm: "本当に削除しますか?" } %>
+
+
+
 </p>

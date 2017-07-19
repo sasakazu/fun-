@@ -6,9 +6,25 @@
 // show.html.erb
 
 
+.picture-show-wrapper {
+  margin-top: 80px;
+  margin-bottom: 100px;
+
+
+
+  p {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+}
+
+
 img {
-  height: 400px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
 
 }
 
