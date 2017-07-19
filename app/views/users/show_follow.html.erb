@@ -4,11 +4,11 @@
 
 <div class="container">
 
-<div class="row">
+<div class="row show_follow-wrapper">
   <aside class="col-md-4">
     <section class="user_info">
-      <h1><%= @user.name %></h1>
-      <span><%= link_to "プロフィールへ", @user %></span>
+      <h1><%= link_to @user.name, @user %></h1>
+      <!-- <span><%= link_to "プロフィールへ", @user %></span> -->
     </section>
 
     <section class="stats">
@@ -22,11 +22,11 @@
     </section>
 
   </aside>
-  <div class="col-md-8">
+  <div class="col-md-8 follow-fan">
     <h3><%= @title %></h3>
     <% if @users.any? %>
       <ul class="users follow">
-        <%=  link_to @user.name, @user %>
+        <%= render @users %>
       </ul>
       <%= will_paginate %>
     <% end %>

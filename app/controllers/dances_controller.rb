@@ -17,17 +17,25 @@ class DancesController < ApplicationController
       @dances = Dance.all
     end
 
+    def edit
+
+    end
+
+    def destroy
+      Dance.find(params[:id]).destroy
+      redirect_to current_user
+    end
 
 
-      def create
-        @dance = current_user.dances.build(dance_params)
+    def create
+      @dance = current_user.dances.build(dance_params)
 
-        if @dance.save
-            redirect_to @dance
-        else
-            render "new"
-        end
+      if @dance.save
+        redirect_to @dance
+      else
+        render "new"
       end
+    end
 
 
 

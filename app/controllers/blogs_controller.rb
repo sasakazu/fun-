@@ -8,21 +8,33 @@ class BlogsController < ApplicationController
   def index
   end
 
-def show
+
+  def show
+      @blog = Blog.find(params[:id])
+  end
+
+
+  def edit
     @blog = Blog.find(params[:id])
-end
+
+  end
+
+  def destroy
+    Blog.find(params[:id]).destroy
+    redirect_to current_user
+  end
 
 
 
-    def create
-      @blog = current_user.blogs.build(blog_params)
+  def create
+    @blog = current_user.blogs.build(blog_params)
 
-      if @blog.save
-          redirect_to @blog
-      else
-          render "new"
-      end
+    if @blog.save
+      redirect_to @blog
+    else
+      render "new"
     end
+  end
 
 
 
