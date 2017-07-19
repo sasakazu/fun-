@@ -6,8 +6,6 @@
   「 <%= link_to blog.title, blog, :target => "_blank" %> 」
 
 
-  <%= link_to '[ edit ]', edit_blog_path(current_user) %>
-
     <%= link_to "delete", blog, method: :delete, :class => "areyousure",
                                   data: { confirm: "本当に削除しますか?" } %>
 

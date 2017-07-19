@@ -6,7 +6,6 @@
 &nbsp;
   「 <%= link_to picture.title, picture, :target => "_blank" %> 」
 
-  <%= link_to '[ edit ]', edit_picture_path(current_user) %>
 
   <%= link_to "delete", picture, method: :delete, :class => "areyousure",
                                   data: { confirm: "本当に削除しますか?" } %>

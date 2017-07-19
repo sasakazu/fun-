@@ -5,7 +5,7 @@ class Music < ApplicationRecord
 
   belongs_to :user
 
-  validates :user_id, :title, :music, presence: true
+  # validates :user_id, :title, :music, presence: true
 
 
 

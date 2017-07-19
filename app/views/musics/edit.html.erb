@@ -5,7 +5,23 @@
 
 <div class="container">
 
-  edit
+
+    <%= form_for @music do |f| %>
+
+      <div class="field">
+        <%= f.text_field :title, :placeholder => "タイトル" %><br>
+      </div>
+
+      <div class="field">
+        <%= f.label :音楽選択 %>
+        <%= f.file_field :music %>
+      </div>
+
+
+    <%= f.submit '送信' %>
+
+    <% end %>
+
 
 </div>
 
